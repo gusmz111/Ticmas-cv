@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+/*===========VARIABLES CSS===========*/
+:root {
+    --light-firstcolor: hsl(0, 0%, 98%);
+    --light-secondcolor: hsl(231, 89%, 5%);
+    --light-threecolor: hsl(231, 89%, 7%);
+    --light-fourcolor: hsl(278, 35%, 78%);
+    --light-fivecolor: hsl(278, 35%, 24%);
+
+    --dark-firstcolor: hsl(55, 87%, 3%);
+    --dark-secondcolor: hsl(56, 100%, 82%);
+    --dark-threecolor: hsl(57, 100%, 91%);
+    --dark-fourcolor: hsl(71, 100%, 50%);
+
+    --body-font:  'Roboto Mono', 'monospace';
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*======  MENU  =========*/
+
+.container {
+    background: var(--light-fourcolor);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container header .nav__logo {
+    font-family: 'Roboto Mono';
+    font-size: 36px;
+    color: var(--light-firstcolor);
+    text-decoration: none;
+}
+
+.container header  nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav__icon,
+.nav__navegador,
+.nav__cerrar {
+    display: none;
+}
+
+.container header .nav__menu ul li a {
+    text-align: none;
+    color: var(--light-threecolor);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.container header .nav__menu ul li a:hover {
+    color: var(--light-firstcolor);
+}
+
+/*==== seccion inicio =====*/
+.inicio {
+    background: linear-gradient(to top, rgba(254, 254, 254, 0.34),rgba(255, 255, 255, 0.837)),
+    url(./flores.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .content-banner {
+    padding: 20px;
+    background-color: var(--light-firstcolor);
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    border-radius: 48px;
+    border: 5px solid var(--light-fivecolor);
+}
+
+.inicio .content-banner img{
+    margin-top: 4px;
+    border: 7px solid var(--light-fourcolor);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.inicio .content-banner h1 {
+    margin-top: 30px;
+    font-size: 32px;
+    font-family: 'monospace';
+}
+.inicio .content-banner h3{
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+}
+
+.inicio .content-banner .redes a{
+    color: #fb6f92;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 24px;
+    border:1px solid #fb6f92 ;
+    transition: .4s;
+}
+.inicio .content-banner .redes a:hover{
+    background-color: var(--light-secondcolor);
+}
+
+.sobremi {
+    background-color: var(--light-firstcolor);
+    color: var(--light-threecolor);
+    padding: 50px 20px;
+    
+}
+.sobremi .content-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h3 {
+    font-size: 32px;
+    font-family: 'monospace';
+    text-align: center;
+    padding: 20px 0 ;
+}
+.sobremi .content-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .fila {
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Roboto Mono';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: var(--light-fivecolor)
+}
+.sobremi .fila .col .content-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .content-intereses .intereses {
+    width: 100px;
+    height: 100px;
+    
+}
+

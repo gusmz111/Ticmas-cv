@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/439a4acdfe.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive CV Proyect</title>
+</head>
+
+<body> 
+    <!--=======HEADER=======-->
+
+<div class="nav container">
+<header class="header" id="header">
+    <div class="logo">
+        <a href="#" id="logo" class="nav__logo"></a>
+    </div>
+        <nav class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#inicio" class="nav__link">
+                        <i class="fa-solid fa-house nav__icon"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#sobremi" class="nav__link">
+                        <i class="fa-solid fa-user nav__icon"></i> Sobre mi
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="fa-solid fa-file nav__icon"></i> Skills
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contactar" class="nav__link">
+                        <i class="fa-solid fa-paper-plane nav__icon"></i> Contactar
+                    </a>
+                </li>
+             </ul>
+        </nav>
+
+         <div class="nav__btns">
+            <i class="fa-solid fa-xmark nav__cerrar"></i>
+
+            <div class="nav__navegador" id="nav-navegador">
+                <i class="fa-solid fa-qrcode"></i>
+            </div>
+         </div>
+</header>
+</div>
+
+ <!--== SECCION INICIO ==-->
+<section id="inicio" class="inicio">
+    <div class="content-banner">
+        <div class="conteneder-img">
+            <img src="" id= "imagen" alt="foto/perfil de la persona">
+        </div>
+           <h1 id="usuario"></h1>
+           <h3>/Desarrollador Web/</h3>
+        <div class="redes">
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fa-brands fa-github"></i></a>
+             <a href=""><i class="fa-brands fa-linkedin"></i></a>       
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+</section>
+
+<!--===SECCION SOBRE MI===-->
+<section id="sobremi" class="sobremi">
+    <div class="content-seccion">
+        <h3>Sobre Mi</h3>
+        <p>Me considero una persona responsable y bastante ordenada tanto con asuntos laborales como personales, con mucha curiosidad en este mundo IT aunque me juega en contra el querer aprender todo o de alguna manera estar al tanto de actualizaciones sobre desarrollo front como backend y nada, espero crecer en lo laboral con mucha experiencia y conocimientos.... Gracias por mirar mi perfil.</p>
+    
+        <div class="fila">
+
+            <div class="col">
+                 <h3>Datos Personales</h3>
+                 <ul>
+                    <strong>Cumpleaños</strong>
+                    <li id="cumple"></li>
+                    <br>
+                    <strong>Telefono</strong>
+                    <li id="tel"></li>
+                    <br>
+                    <strong>Email</strong>
+                    <li id="email"></li>
+                 </ul>
+            </div>
+
+
+            <div class="col">
+                <h3>Interes</h3>
+                <div class="content-interes">
+                    <div class="intereses">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-book"></i>
+                        <span>LIBROS</span>
+                    </div>  
+                    <div class="intereses">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div> 
+                    <div class="intereses">   
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>COMPONENTES PC</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+    <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+    </button>
+    </div>
+</section>
+
+
+<script src="main.js"></script> 
+</body>
+</html>
